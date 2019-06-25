@@ -1,0 +1,82 @@
+.clearfix,
+.card {
+  content: "";
+  display: "block";
+  clear: both;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.create-task {
+  bottom: -85%;
+  height: 85%;
+  opacity: 0;
+  pointer-events: none;
+  background-color: #fafafa;
+  z-index: 20;
+  box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.318s ease-out;
+  -webkit-trnasition: all 0.318s ease-out;
+  -moz-transition: all 0.318s ease-out;
+  -o-transition: all 0.318s ease-out;
+}
+.card {
+  position: relative;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 18px;
+  background-color: white;
+  -webkit-transition: all 0.618s ease-out;
+  -moz-transition: all 0.618s ease-out;
+  -o-transition: all 0.618s ease-out;
+}
+.write-button {
+  cursor: pointer;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background: red url("svg/pencil.svg") center no-repeat;
+  background-size: 60%;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
+}
+.write-button:hover {
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+}
+.edit-icon {
+  position: absolute;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  background: url("data:image/svg+xml; base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUyOC44OTkgNTI4Ljg5OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTI4Ljg5OSA1MjguODk5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+PGc+Cgk8cGF0aCBkPSJNMzI4Ljg4Myw4OS4xMjVsMTA3LjU5LDEwNy41ODlsLTI3Mi4zNCwyNzIuMzRMNTYuNjA0LDM2MS40NjVMMzI4Ljg4Myw4OS4xMjV6IE01MTguMTEzLDYzLjE3N2wtNDcuOTgxLTQ3Ljk4MSAgIGMtMTguNTQzLTE4LjU0My00OC42NTMtMTguNTQzLTY3LjI1OSwwbC00NS45NjEsNDUuOTYxbDEwNy41OSwxMDcuNTlsNTMuNjExLTUzLjYxMSAgIEM1MzIuNDk1LDEwMC43NTMsNTMyLjQ5NSw3Ny41NTksNTE4LjExMyw2My4xNzd6IE0wLjMsNTEyLjY5Yy0xLjk1OCw4LjgxMiw1Ljk5OCwxNi43MDgsMTQuODExLDE0LjU2NWwxMTkuODkxLTI5LjA2OSAgIEwyNy40NzMsMzkwLjU5N0wwLjMsNTEyLjY5eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojQkNCQ0JDIiBkYXRhLW9sZF9jb2xvcj0iI0QzRDJEMiI+PC9wYXRoPgo8L2c+PC9nPiA8L3N2Zz4=") no-repeat center;
+  background-size: cover;
+}
+
+.delete-icon {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("svg/bin.svg") center no-repeat;
+  background-size: cover;
+}
+.close-icon {
+  cursor: pointer;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url("svg/cancel.svg") center no-repeat;
+  background-size: cover;
+  border: 2px solid yellow;
+}
+.create-task-active {
+  pointer-events: auto;
+  opacity: 1;
+  bottom: 0;
+}
+.card-inactive {
+  opacity: 0 !important;
+  transform: translateX(50%);
+}

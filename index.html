@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Todolist</title>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+	<div class="top-bar-background">
+	    <div class="overlay"></div>
+	    <!-- <h1 class="brand">Todo.List.</h1> -->
+	</div>
+  <section class="views">
+		<div class="todolist view">
+			<h3 class="header">Tasks</h3>
+			<div class="write-button"></div>
+			<ul class="task-list">
+				<!-- <li class="card task">
+					<div class="edit-icon"></div> 
+					<div class="delete-icon delete-task"></div>
+					<div class="task-info">
+						<h3 class="task-date">05/12/18</h3>
+						<h3 class="task-time">9:00PM</h3>
+					</div>
+					<p class="task-detail">go home</p>
+				</li> -->
+			</ul>
+		</div>
+
+		<div class="create-task">
+			<form class="create-task-form">
+				<div class="close-icon close-form"></div>
+				<label for="create-task-form" class="header"><h2>New Task</h2></label>
+				<label for="year">Date</label>
+				<input type="number" class="month" name="month" placeholder="Month">
+				<input type="number" class="day" name="day" placeholder="Day">
+				<input type="number" class="year" name="year" placeholder="Year">
+				<label for="task-detail">Task</label>
+				<textarea class="task-detail" name="task"></textarea>
+				<label for="time">Time</label>
+				<input type="time" class="time" name="time" placeholder="Time">
+				<input type="submit" class="submit" value="Publish">
+			</form>
+		</div>
+	</section>
+
+	<script src="app.js" type="module"></script>
+	<script src="display.js" type="module"></script>
+	<script src="data.js" type="module"></script>
+
+</body>
+</html>
